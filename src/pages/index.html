@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>天天领红包</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			/*toast*/
+			
+			.toast {
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index: 999;
+				width: 100%;
+				height: 100%;
+				line-height: 1.5;
+				display: none;
+			}
+			
+			.toast_value {
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: auto;
+				top: 50%;
+				transform: translateY(-50%);
+				-webkit-transform: translateY(-50%);
+				background-color: rgba(0, 0, 0, 0.6);
+				color: #fff;
+				text-align: center;
+				padding: 30px;
+				width: 50%;
+				border-radius: 10px;
+				font-size: 14px;
+			}
+			
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+				/*opacity: 0.14;*/
+			}
+			
+			.wrap {
+				width: 100%;
+				height: 100%;
+				overflow: hidden;
+				/*background-color: #10AEFF;*/
+				background-image: url(img/bg.png);
+				background-size: 100% 100%;
+				text-align: center;
+				position: relative;
+			}
+			
+			.p1 {
+				width: 90%;
+				/*margin: 0 auto;*/
+				padding-top: 60px;
+			}
+			
+			.btn {
+				width: 100px;
+				position: absolute;
+				bottom: 100px;
+				left: 0;
+				right: 0;
+				margin: auto;
+			}
+			
+			.modal {
+				width: 100%;
+				height: 100%;
+				position: fixed;
+				left: 0;
+				top: 0;
+				background-color: rgba(0, 0, 0, .5);
+				display: none;
+			}
+			
+			.modal_box {
+				width: 90%;
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: auto;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+			
+			.modal_box img {
+				width: 100%;
+				/*position: absolute;
+				z-index: -1;
+				left: 0;
+				top: 0;*/
+			}
+			
+			.tips {
+				font-size: 18px;
+				position: absolute;
+				top: 50%;
+				width: 100%;
+				color: #fbe844;
+			}
+			
+			.tips span {
+				font-weight: bold;
+				font-size: 22px;
+			}
+			
+			.btn_use {
+				width: 60%;
+				left: 0;
+				right: 0;
+				margin: auto;
+				position: absolute;
+				bottom: 20px;
+				height: 70px;
+			}
+			
+			.hb {
+				width: 90%;
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				left: 0;
+				right: 0;
+				margin: auto;
+				display: none;
+			}
+			
+			.hb2 {
+				display: none;
+			}
+			
+			.hb img {
+				width: 100%;
+			}
+			
+			.btn_open,
+			.btn_toast {
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: auto;
+				bottom: 55px;
+				width: 200px;
+				height: 40px;
+			}
+			/*.tips*/
+			
+			.am-toast {
+				position: fixed;
+				width: 100%;
+				z-index: 1999;
+				font-size: 14px;
+				text-align: center;
+			}
+			
+			.am-toast>span {
+				max-width: 50%;
+			}
+			
+			.am-toast {
+				height: 100%;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-pack: center;
+				-webkit-justify-content: center;
+				-ms-flex-pack: center;
+				justify-content: center;
+				-webkit-box-align: center;
+				-webkit-align-items: center;
+				-ms-flex-align: center;
+				align-items: center;
+				left: 0;
+				top: 0;
+				-webkit-transform: translateZ(0.5px);
+				transform: translateZ(0.5px);
+			}
+			
+			.am-toast.am-toast-nomask {
+				position: fixed;
+				max-width: 50%;
+				width: auto;
+				left: 50%;
+				top: 50%;
+				-webkit-transform: translateZ(0.5px);
+				transform: translateZ(0.5px);
+			}
+			
+			.am-toast.am-toast-nomask .am-toast-notice {
+				-webkit-transform: translateX(-50%) translateY(-50%);
+				-ms-transform: translateX(-50%) translateY(-50%);
+				transform: translateX(-50%) translateY(-50%);
+			}
+			
+			.am-toast-notice-content .am-toast-text {
+				min-width: 60px;
+				border-radius: 10px;
+				color: #fff;
+				background-color: rgba(58, 58, 58, 0.9);
+				line-height: 1.5;
+				padding: 9px 15px;
+			}
+			
+			.am-toast-notice-content .am-toast-text.am-toast-text-icon {
+				border-radius: 4px;
+				padding: 15px;
+				text-align: center;
+			}
+			
+			.am-toast-notice-content .am-toast-text.am-toast-text-icon .am-toast-text-info {
+				margin-top: 6px;
+			}
+			
+			.am-toast>span {
+				max-width: 50%;
+			}
+			
+			.loading {
+				width: 20px;
+				height: 20px;
+				/*animation: rotates 4s linear infinite;;*/
+			}
+			
+			.am-toast {
+				visibility: hidden;
+			}
+			
+			@keyframes rotates {
+				from {
+					transform: rotate(0);
+				}
+				to {
+					transform: rotateZ(360deg);
+				}
+			}
+			.banner{
+				width: 90%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="am-toast am-toast-mask">
+			<span>
+				<div class="am-toast-notice am-toast-notice-closable">
+					<div class="am-toast-notice-content">
+						<div class="am-toast-text am-toast-text-icon" role="alert" aria-live="assertive">
+							<!--<div class="loading"></div>-->
+							<img src="img/loading.png" class="loading"/>
+							<div class="am-toast-text-info">loading...</div>
+						</div>
+					</div>
+				</div>
+			</span>
+		</div>
+		<div class="wrap">
+			<img src="img/top.png" class="banner" />
+			<div class="hb hbBox1">
+				<img src="img/hb1.png" class="hb1" />
+				<div class="btn_open"></div>
+			</div>
+
+			<div class="hb hbBox2">
+				<img src="img/hb2.png" class="hb2" />
+				<div class="btn_toast"></div>
+			</div>
+			
+			<div class="hb hbBox3">
+				<img src="img/hb3.png" class="hb1" />
+			</div>
+			
+		</div>
+		<!--<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			//设置openid
+			var openid = GetQueryString("openid") || localStorage.getItem("openid") || '';
+			localStorage.setItem("openid", openid)
+			
+			var available = GetQueryString('available');
+			console.log(available)
+			//0:已提交
+			if(available === '0'){
+				$(".hbBox3").show()
+			}else{
+				$(".hbBox1").show()
+				$(".hbBox2").show()
+			}
+
+			//toast
+			function showToast(value) {
+				var html = '<div class="toast">' +
+					'<div class="toast_value">' + value + '</div>' +
+					'</div>'
+				$("body").append(html)
+				$(".toast").fadeIn(300);
+				setTimeout(function() {
+					$(".toast").fadeOut(300, function() {
+						$(this).remove()
+					});
+				}, 1500)
+			}
+			function GetQueryString(name) {
+				var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+				var r = window.location.search.substr(1).match(reg);
+				if(r != null) return unescape(r[2]);
+				return null;
+			}
+
+			$(".btn").click(function() {
+				$(".modal").show()
+				//				$(".am-toast").css('visibility', 'visible')
+
+			})
+			
+			var params = {
+				openid: localStorage.getItem('openid'),
+				reward: 1
+			}
+
+			//拆红包
+			$(".btn_open").click(function() {
+				showLoading()
+				$.ajax({
+					type: "post",
+					url: "http://gzh.jr.yueming888.com/wyWChat/ffc/fansReward.do?openid=" + params.openid + '&reward=' + params.reward,
+//					data: params,
+					dataType:'json',
+//					contentType: 'application/json;charset=UTF-8',
+					success(data) {
+						console.log(data)
+						
+						$(".hb1").hide()
+						$(".hb2").show()
+					},
+					error(err) {
+						console.log(err)
+					},
+					complete() {
+						hideLoading()
+						console.log('完成')
+					}
+				});
+
+			})
+
+//			$(".btn_toast").click(function() {
+//				showToast('请到店出示该红包')
+//			})
+
+			//显示loading
+			function showLoading() {
+				$(".am-toast").css('visibility', 'visible')
+			}
+			//隐藏loading
+			function hideLoading() {
+				$(".am-toast").css('visibility', 'hidden')
+			}
+		</script>
+	</body>
+
+</html>

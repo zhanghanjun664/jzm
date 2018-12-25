@@ -1,0 +1,103 @@
+@function rem($flexible) {
+    @if $flexible !=0 {
+        $flexible: $flexible/750*10+rem;
+    }
+    @return $flexible;
+}
+
+.wrap{
+    background-color: #f2f2f2;
+}
+.wrap > div{
+    background-color: #fff;
+    margin-bottom: rem(20);
+}
+
+.p1_personalInfo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: rem(90);
+    color: #10AEFF;
+    padding: 0 rem(20);
+}
+.p1_a{
+    display: flex;
+    align-items: center;
+}
+.p1_a img{
+    width: rem(40);
+    height: rem(40);
+    border-radius: 50%;
+    margin-right: rem(10);
+}
+.p1_personalInfo > a{
+    text-decoration: none;
+    color: #10AEFF;
+}
+
+.wrap .part2{
+    padding: rem(20) rem(10);
+}
+.p2_box{
+    overflow: hidden;
+    margin-bottom: rem(10);
+}
+.p2_box_a{
+    padding: rem(10) rem(10) rem(10) rem(20);
+}
+.p2_box > div{
+    float: left;
+}
+.p2_box_b{
+    width: rem(600);
+}
+.p2_box_b > div{
+    
+    float: left;
+    padding: rem(10);
+//  background-color: #10AEFF;
+    background-color: transparent;
+    border-radius: rem(10);
+    margin-right: rem(10);
+}
+.p2_box_b .active{
+    background-color: #10AEFF;
+    color: #fff;
+}
+
+.wrap .part3{
+    padding: rem(30) rem(10);
+}
+.p3_item{
+    overflow: hidden;
+    padding-bottom: rem(20);
+    border-bottom: rem(2) solid #EEEEEE;
+    margin-bottom: rem(16);
+    list-style: none;
+}
+.p3_item > div{
+    float: left;
+}
+.p3_item_a{
+   width: rem(200);
+   min-height: rem(260);
+   margin-right: rem(20);
+}
+.p3_item_a > img{
+    width: 100%;
+}
+.p3_item_b{
+    width: rem(500);
+}
+.p3_item_c{
+    font-size: rem(34);
+    margin-bottom: rem(20);
+}
+.p3_item_d{
+    line-height: 1.6;
+}
+
+.noData{
+    display: none;
+}

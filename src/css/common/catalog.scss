@@ -1,0 +1,32 @@
+@function rem($flexible) {
+    @if $flexible !=0 {
+        $flexible: $flexible/750*10+rem;
+    }
+    @return $flexible;
+}
+
+.wrap{
+    padding-bottom: rem(30);
+}
+
+.part2{
+    text-align: center;
+    font-size: rem(40);
+    padding: rem(40) 0 rem(60);
+    letter-spacing: rem(2);
+    color: #1e5cb8;
+    background-color: #fbf9fe;
+    border-bottom: rem(2) solid #EEEEEE;
+}
+.p3_box > li{
+    padding-left: rem(20);
+    line-height: rem(80);
+    border-bottom: rem(2) solid #EEEEEE;
+}
+.p3_box > li img{
+    width: rem(36);
+}
+.p3_box > li span{
+    margin-left: rem(16);
+    color: #ff73b9;
+}

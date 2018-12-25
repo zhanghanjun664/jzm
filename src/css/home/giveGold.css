@@ -1,0 +1,33 @@
+.p2_title {
+  color: #2561bb;
+  text-align: center;
+  font-size: 0.48rem;
+  padding: 0.4rem 0.66667rem; }
+
+.p2_item {
+  display: flex;
+  height: 2.4rem;
+  border-bottom: 0.02667rem solid #EEEEEE;
+  border-top: 0.02667rem solid #EEEEEE; }
+
+.p2_item > div {
+  flex: 1;
+  border-right: 0.02667rem solid #EEEEEE;
+  height: 100%;
+  text-align: center;
+  position: relative; }
+
+.p2_item_a {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%); }
+
+.p2_item_a > .iconfont {
+  margin-bottom: 0.13333rem;
+  color: #10aeff; }
+
+.part2 .noBorder {
+  border: none; }

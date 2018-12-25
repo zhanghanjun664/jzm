@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>签到</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="../../js/utils/flexible.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../../css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/home/sign.css"/>
+	</head>
+	<body>
+		<div class="wrap">
+			<div class="part1">
+				<div id="headNav"></div>
+			</div>
+			
+			<div class="part2">
+				<div class="part2_a"><img src="../../img/test.jpg"/></div>
+				<div class="part2_b">签到送礼</div>
+				<div class="part2_c">每日签到可获得 30 书币奖励</div>
+			</div>
+			
+			<div class="part3">
+				<div class="btn noSigned">签到</div>
+				<div class="btn hadSigned">您今天已经签到</div>
+			</div>
+			
+		</div>
+		
+		<script src="../../js/utils/jquery3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			//检查是否签到
+			ajax({
+				type:"post",
+				url: REST_PRRFIX + "/api/index/sign/get.json",
+				data:{userId: userId},
+				dataType:"json",
+				success:function(data){
+					if(data.code == 666){
+						//已签到
+						console.log(222)
+						$(".hadSigned").show()
+						$(".noSigned").hide()
+					}else{
+						console.log(11)
+						$(".noSigned").show()
+						$(".hadSigned").hide()
+					}
+				}
+			})
+			
+			//签到
+			$(".noSigned").on("click", function(){
+				ajax({
+					type:"post",
+					url: REST_PRRFIX + "/api/index/sign.json",
+					data:{userId: userId},
+					dataType:"json",
+					success:function(data){
+						console.log(data)
+						$(".noSigned").hide();
+						$(".hadSigned").show()
+						
+						showToast("签到成功，赠送30书币")
+					}
+				})
+			})
+		</script>
+	</body>
+</html>

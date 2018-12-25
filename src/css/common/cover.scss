@@ -1,0 +1,96 @@
+@function rem($flexible) {
+    @if $flexible !=0 {
+        $flexible: $flexible/750*10+rem;
+    }
+    @return $flexible;
+}
+
+.wrap{
+    padding-bottom: rem(30);
+}
+.part2{
+    background-color: #fbf9fe;
+    padding: rem(30) rem(30) rem(60);
+    border-bottom: rem(2) solid #eeeeee;
+    overflow: hidden;
+}
+.part2_cover{
+    float: left;
+    width: rem(230);
+    height: rem(300);
+}
+.part2_cover > img{
+    width: 100%;
+    min-height: rem(280);
+}
+.part2_desc{
+    float: left;
+    width: rem(420);
+    margin-left: rem(30);
+}
+.part2_desc_a{
+    color: #10AEFF;
+    font-size: rem(38);
+    font-weight: bold;
+    margin-bottom: rem(20);
+    letter-spacing: rem(2);
+}
+
+.part3{
+    padding: rem(30) rem(20);
+}
+.p3_a .p3_a_icon{
+    width: rem(30);
+    margin-right: rem(6);
+    color: #10AEFF;
+}
+.p3_a > span{
+    font-size: rem(32);
+    color: #222222;
+    font-weight: bold;
+}
+.p3_a{
+    margin-bottom: rem(20);
+}
+.p3_b{
+    line-height: 1.5;
+//  font-size: rem(30);
+}
+
+.part4{
+    padding: rem(30) rem(20) rem(50);
+    background-color: #fbf9fe;
+    border-top: rem(2) solid #EEEEEE;
+    border-bottom: rem(2) solid #EEEEEE;
+}
+
+.part5_title{
+    padding: rem(20);
+    border-bottom: rem(2) solid #eeeeee;
+}
+.part5_title > img{
+    width: rem(30);
+    margin-right: rem(6);
+}
+.part5_title >span{
+    font-size: rem(32);
+    color: #222222;
+    font-weight: bold;
+}
+.part5_box > li{
+    padding-left: rem(20);
+    line-height: rem(80);
+    border-bottom: rem(2) solid #eeeeee;
+}
+.part5_box span{
+    color: #ff73b9;
+}
+.part5_box .iconfont{
+    margin-left: rem(20);
+}
+.part5_catalog{
+    line-height: rem(80);
+    text-align: center;
+    border-bottom: rem(2) solid #eeeeee;
+    color: #10AEFF;
+}

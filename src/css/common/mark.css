@@ -1,0 +1,34 @@
+.wrap {
+  background-color: #f2f2f2; }
+
+.part2 {
+  text-align: center;
+  font-size: 0.48rem;
+  padding: 0.53333rem 0 0.93333rem;
+  font-weight: bold;
+  color: #2561bb; }
+
+.p3_box {
+  border-top: 0.02667rem solid #EEEEEE;
+  background-color: #fff; }
+
+.p3_box li {
+  line-height: 1.06667rem;
+  border-bottom: 0.02667rem solid #EEEEEE;
+  padding: 0 0.4rem; }
+
+.p3_delete {
+  float: right;
+  background-color: #ff0000;
+  line-height: 0.8rem;
+  margin-top: 0.13333rem;
+  padding: 0 0.26667rem;
+  color: #fff;
+  border-radius: 0.13333rem; }
+
+.p3_title {
+  font-size: 0.42667rem;
+  margin-right: 0.13333rem; }
+
+.p3_num {
+  font-size: 0.34667rem; }

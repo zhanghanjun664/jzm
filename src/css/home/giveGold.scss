@@ -1,0 +1,41 @@
+@function rem($flexible) {
+    @if $flexible !=0 {
+        $flexible: $flexible/750*10+rem;
+    }
+    @return $flexible;
+}
+
+.p2_title{
+    color: #2561bb;   
+    text-align: center;
+    font-size: rem(36);
+    padding: rem(30) rem(50);
+}
+.p2_item{
+    display: flex;
+    height: rem(180);
+    border-bottom: rem(2) solid #EEEEEE;
+    border-top: rem(2) solid #EEEEEE;
+}
+.p2_item > div{
+    flex: 1;
+    border-right: rem(2) solid #EEEEEE;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+.p2_item_a{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.p2_item_a > .iconfont{
+    margin-bottom: rem(10);
+    color: #10aeff;
+}
+.part2 .noBorder{
+    border: none;
+}

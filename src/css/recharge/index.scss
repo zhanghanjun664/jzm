@@ -1,0 +1,68 @@
+@function rem($flexible) {
+    @if $flexible !=0 {
+        $flexible: $flexible/750*10+rem;
+    }
+    @return $flexible;
+}
+
+.part2{
+    padding: rem(30) 0 rem(20);
+    border-bottom: 1px solid #EEEEEE;
+}
+.p2_a{
+    font-size: rem(40);
+    text-align: center;
+    color: #2964bc;
+    margin-bottom: rem(30);
+}
+.p2_b{
+    padding-left: rem(20);
+    font-size: rem(32);
+}
+.p2_b > span{
+    color: #fe981b;
+}
+.p2_b > strong{
+    color: #000;
+}
+.yearVip{
+    display: none;
+}
+
+.part3{
+    padding: rem(20);
+}
+.pe_tips{
+    font-size: rem(32);
+}
+.pe_tips > span{
+    color: #fd5e25;
+}
+.p3_box{
+    overflow: hidden;
+    margin: rem(20) 0 rem(40);
+}
+.p3_box > div{
+    padding: rem(16) 0;
+    float: left;
+    width: rem(330);
+    margin: 0 rem(10) rem(20) rem(10);
+    border: rem(2) solid #eeeeee;
+    border-radius: rem(10);
+    text-align: center;
+    line-height: 1.5;
+}
+.p3_box > .active{
+    border: rem(2) solid #fe981b;
+}
+.p3_box > .active > div{
+    color: #fe981b!important;
+}
+.p3_box > div > div{
+    font-size: rem(28);
+    color: #999999;
+}
+.p3_box > div > .p3_box_a{
+    font-size: rem(36);
+    color: #000;
+}

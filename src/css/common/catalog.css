@@ -1,0 +1,23 @@
+.wrap {
+  padding-bottom: 0.4rem; }
+
+.part2 {
+  text-align: center;
+  font-size: 0.53333rem;
+  padding: 0.53333rem 0 0.8rem;
+  letter-spacing: 0.02667rem;
+  color: #1e5cb8;
+  background-color: #fbf9fe;
+  border-bottom: 0.02667rem solid #EEEEEE; }
+
+.p3_box > li {
+  padding-left: 0.26667rem;
+  line-height: 1.06667rem;
+  border-bottom: 0.02667rem solid #EEEEEE; }
+
+.p3_box > li img {
+  width: 0.48rem; }
+
+.p3_box > li span {
+  margin-left: 0.21333rem;
+  color: #ff73b9; }

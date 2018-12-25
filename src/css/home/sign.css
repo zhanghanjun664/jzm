@@ -1,0 +1,20 @@
+.part2 {
+  text-align: center; }
+
+.part2_a {
+  margin-top: 1.6rem; }
+
+.part2_b {
+  font-size: 0.45333rem;
+  margin: 0.8rem 0 0.26667rem; }
+
+.part3 {
+  margin: 0.8rem 0.4rem; }
+
+.hadSigned {
+  background-color: #72c3ec;
+  color: #EEEEEE;
+  display: none; }
+
+.part2_a > img {
+  width: 50%; }
