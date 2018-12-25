@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>手机赚钱</title>
+  <script src="../js/utils/flexible.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="../css/common.css" />
+  <link rel="stylesheet" type="text/css" href="../css/index.css" />
+</head>
+
+<body>
+  <div class="page page-current page-inited" id="miao_task_page">
+    <input type="hidden" id="a_c" value="">
+    <input type="hidden" id="channel_id" value="58">
+    <input type="hidden" id="signature" value="">
+    <input type="hidden" id="noncestr" value="">
+    <input type="hidden" id="timestamp" value="">
+    <input type="hidden" id="appid" value="">
+    <header class="bar bar-nav">
+      <a class="icon icon-left pull-left back-app" id="backApp"></a>
+
+
+
+      <a href="javascript:;" class="button button-link button-mymsn pull-right" id="user_task_link">我的任务</a>
+
+
+      <h1 class="title">
+        <div id="rw-city" class="local"><span class="m-city">广州</span></div>
+      </h1>
+    </header>
+    <div class="content infinite-scroll" data-distance="100">
+      <!--<div class="desk_guide" id="desk_guide">快速添加至桌面，提现更便捷 <div class="close"></div></div>-->
+      <!-- 专区 -->
+      <div class="m-api clearfix" id="m_area_list">
+
+        <div class="m-api_cell1" data-type="1" data-value="86">
+
+          <img src="http://img.jianzhimao.com/activity/prize/20180910/8bf4784e2a56ff62443314492064a0a7.jpg">
+
+        </div>
+
+        <div class="m-api_cell2" data-type="1" data-value="12">
+
+          <img src="http://img.jianzhimao.com/activity/prize/20180713/15da06608e191cc773a0821f9d1ac90c.jpg">
+
+        </div>
+
+        <div class="m-api_cell3" data-type="1" data-value="78">
+
+          <img src="http://img.jianzhimao.com/activity/prize/20180820/eef01d1c80a2bf15e08c413b6c67a6e3.jpg">
+
+        </div>
+
+        <div class="m-api_cell4" data-type="1" data-value="68">
+
+          <img src="http://img.jianzhimao.com/activity/prize/20180607/748ca576e1e13a0eebbf447e34a9bdb9.jpg">
+
+        </div>
+
+      </div>
+      <script type="text/javascript" async="" charset="utf-8" src="https://c.cnzz.com/core.php?web_id=1254075128&amp;t=q"></script>
+      <script src="https://hm.baidu.com/hm.js?c48dcbb8f7a6cb176845ad3439189ed0"></script>
+      <script type="text/javascript" async="" src="https://dn-growing.qbox.me/vds.js"></script>
+      <script id="t_area_temp" type="text/template7">
+                {{#each data}}
+            <div class="m-api_cell{{location}}" data-type="{{action_type}}" data-value="{{action_value}}">
+              {{#js_compare "this.action_type==='-1'"}}
+              <img src="/static/img/default_special_0{{location}}.png" />
+              {{else}}
+              <img src="{{img}}" />
+              {{/js_compare}}
+            </div>
+          {{/each}}
+              </script>
+      <!-- Slider -->
+      <div id="banners_wrapper">
+        <div class="swiper-wrapper" id="miao_task_banners"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="" id="filter_wrap">
+        <!-- 地区筛选 -->
+        <div class="loc_box flex_box f-pr">
+          <div class="slt"> <span class="slt_type">分类</span> </div>
+          <div class="slt"> <span class="slt_sqe">排序</span> </div>
+          <div class="loc_box_con">
+            <div class="con m-filter">
+              <!-- 分类 -->
+              <div class="m-sxtype con_box">
+                <ul class="f-cb">
+                  <li class="cur" state="" type="task-type">不限</li>
+                  <li state="1" type="task-type">注册体验</li>
+                  <li class="wx_disabled" state="2" type="task-type">社交传播</li>
+                  <li state="3" type="task-type">调查采集</li>
+                  <li state="4" type="task-type">办信用卡</li>
+                  <li state="5" type="task-type">其他</li>
+
+                </ul>
+              </div>
+              <!-- 排序 -->
+              <div class="m-sxsqe con_box">
+                <ul class="f-cb">
+                  <li state="1" type="order-by">最新发布</li>
+                  <li state="2" type="order-by">单价最高</li>
+                  <!--<li state="3" type="order-by">最快审核</li>-->
+                  <li class="cur" state="4" type="order-by">综合排序</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- 筛选栏弹出时，遮罩层 -->
+          <div class="m-loc_fixed"></div>
+        </div>
+      </div>
+      <!-- 兼职列表为空 -->
+      <div class="g-listno" style="display: none;">
+        <div class="m-listno"> <img src="https://img.jianzhimao.com/static/m3/static/img/icon_no.png?v=65c804b" alt="">
+          <p>暂无符合条件的任务</p>
+        </div>
+      </div>
+      <!-- 兼职列表 -->
+      <div class="g-apply_box g-all_task">
+        <ul class="m-list m-user_task_list" id="j_task_list" style="display: block;">
+
+          <li task-id="QlJ1ZUo2WjZlL3c9" category_1="4">
+
+            <i class="task_type  task_icon_creditcard"></i>
+
+
+
+            <div class="alist">
+
+
+
+              <div class="task_r">
+                <ol>
+                  <li class="areali"><span class="num">59.9</span>元</li>
+
+                  <li class="datali">37小时审核</li>
+                </ol>
+              </div>
+              <div class="task_min">
+                <div>
+                  <h2 class="tit">光大信用卡申请-初审通过</h2>
+                </div>
+                <ol>
+                  <li class="datali">剩余57次</li>
+                  <li class="stateli">刚刚</li>
+
+                </ol>
+                <ol>
+                  <li class="tagli">
+
+                    <span class="tagspan" style="background-color:#fe7418">置顶</span>
+
+
+                  </li>
+                </ol>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li task-id="MVF4UmNiZ0w4T0E9" category_1="4">
+
+            <i class="task_type  task_icon_creditcard"></i>
+
+
+
+            <div class="alist">
+
+
+
+              <div class="task_r">
+                <ol>
+                  <li class="areali"><span class="num">50.9</span>元</li>
+
+                  <li class="limitedli">42.4元/次</li>
+
+                  <li class="datali">28小时审核</li>
+                </ol>
+              </div>
+              <div class="task_min">
+                <div>
+                  <h2 class="tit">【官方】-交通银行信用卡申请</h2>
+                </div>
+                <ol>
+                  <li class="datali">剩余89次</li>
+                  <li class="stateli">刚刚</li>
+
+                </ol>
+                <ol>
+                  <li class="tagli">
+
+                    <span class="tagspan" style="background-color:#fe7418">限时提价</span>
+
+
+                  </li>
+                </ol>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li task-id="a25WQUl4eG1PeW89" category_1="2">
+
+            <i class="task_type  task_icon_spread"></i>
+
+
+
+            <div class="alist">
+
+
+
+              <div class="task_r">
+                <ol>
+                  <li class="areali"><span class="num">0.4</span>元</li>
+
+                  <li class="datali">22分钟审核</li>
+                </ol>
+              </div>
+              <div class="task_min">
+                <div>
+                  <h2 class="tit">扫码关注公众号</h2>
+                </div>
+                <ol>
+                  <li class="datali">剩余574次</li>
+                  <li class="stateli">2018-12-01</li>
+
+                </ol>
+                <ol>
+                  <li class="tagli">
+
+                    <span class="tagspan" style="background-color:#ff0000">微信</span>
+
+
+                  </li>
+                </ol>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li task-id="aC9jellwUnBPNE09" category_1="1">
+
+            <i class="task_type  task_icon_register"></i>
+
+
+
+            <div class="alist">
+
+
+
+              <div class="task_r">
+                <ol>
+                  <li class="areali"><span class="num">2.4</span>元</li>
+
+                  <li class="datali">49小时审核</li>
+                </ol>
+              </div>
+              <div class="task_min">
+                <div>
+                  <h2 class="tit">下载注册淘多美券APP</h2>
+                </div>
+                <ol>
+                  <li class="datali">剩余94次</li>
+                  <li class="stateli">2018-12-17</li>
+
+                </ol>
+                <ol>
+                  <li class="tagli">
+
+                  </li>
+                </ol>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li task-id="WWp1RVFYUnp3NWc9" category_1="5">
+
+            <i class="task_type  task_icon_other"></i>
+
+
+
+            <div class="alist">
+
+
+
+              <div class="task_r">
+                <ol>
+                  <li class="areali"><span class="num">0.8</span>元</li>
+
+                  <li class="limitedli">0.65元/次</li>
+
+                  <li class="datali">7小时审核</li>
+                </ol>
+              </div>
+              <div class="task_min">
+                <div>
+                  <h2 class="tit">关注公众号福利多多</h2>
+                </div>
+                <ol>
+                  <li class="datali">剩余2402次</li>
+                  <li class="stateli">2018-12-21</li>
+
+                </ol>
+                <ol>
+                  <li class="tagli">
+
+                    <span class="tagspan" style="background-color:#fe7418">限时提价</span>
+
+
+                  </li>
+                </ol>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li task-id="Ui9YNGErMkcvVTQ9" category_1="1">
+
+            <i class="task_type  task_icon_register"></i>
+
+
+
+            <div class="alist">
+
+
+
+              <div class="task_r">
+                <ol>
+                  <li class="areali"><span class="num">0.5</span>元</li>
+
+                  <li class="limitedli">0.4元/次</li>
+
+                  <li class="datali">8小时审核</li>
+                </ol>
+              </div>
+              <div class="task_min">
+                <div>
+                  <h2 class="tit">甩甩宝宝小程序授权关注</h2>
+                </div>
+                <ol>
+                  <li class="datali">剩余50次</li>
+                  <li class="stateli">2018-12-17</li>
+
+                </ol>
+                <ol>
+                  <li class="tagli">
+
+                    <span class="tagspan" style="background-color:#fe7418">限时提价</span>
+
+
+                  </li>
+                </ol>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li task-id="cGd0VjdPQWlmNE09" category_1="3">
+
+            <i class="task_type  task_icon_survey"></i>
+
+
+
+            <div class="alist">
+
+
+
+              <div class="task_r">
+                <ol>
+                  <li class="areali"><span class="num">0.9</span>元</li>
+
+                  <li class="datali">1小时审核</li>
+                </ol>
+              </div>
+              <div class="task_min">
+                <div>
+                  <h2 class="tit">职业性格测试问卷</h2>
+                </div>
+                <ol>
+                  <li class="datali">剩余41次</li>
+                  <li class="stateli">前天</li>
+
+                </ol>
+                <ol>
+                  <li class="tagli">
+
+                  </li>
+                </ol>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li task-id="aXB4dkRTZUxFZXc9" category_1="1">
+
+            <i class="task_type  task_icon_register"></i>
+
+
+
+            <div class="alist">
+
+
+
+              <div class="task_r">
+                <ol>
+                  <li class="areali"><span class="num">3.15</span>元</li>
+
+                  <li class="datali">62小时审核</li>
+                </ol>
+              </div>
+              <div class="task_min">
+                <div>
+                  <h2 class="tit">聚看点-百元红包</h2>
+                </div>
+                <ol>
+                  <li class="datali">剩余27次</li>
+                  <li class="stateli">2018-12-20</li>
+
+                </ol>
+                <ol>
+                  <li class="tagli">
+
+                  </li>
+                </ol>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li task-id="NGtRRHpkZlU4Vkk9" category_1="2">
+
+            <i class="task_type  task_icon_spread"></i>
+
+
+
+            <div class="alist">
+
+
+
+              <div class="task_r">
+                <ol>
+                  <li class="areali"><span class="num">0.5</span>元</li>
+
+                  <li class="limitedli">0.4元/次</li>
+
+                  <li class="datali">12小时审核</li>
+                </ol>
+              </div>
+              <div class="task_min">
+                <div>
+                  <h2 class="tit">享少花-微信小程序授权</h2>
+                </div>
+                <ol>
+                  <li class="datali">剩余840次</li>
+                  <li class="stateli">2018-12-21</li>
+
+                </ol>
+                <ol>
+                  <li class="tagli">
+
+                    <span class="tagspan" style="background-color:#fe7418">限时提价</span>
+
+
+                  </li>
+                </ol>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li task-id="bFU2S2E0K0dXUG89" category_1="1">
+
+            <i class="task_type  task_icon_register"></i>
+
+
+
+            <div class="alist">
+
+
+
+              <div class="task_r">
+                <ol>
+                  <li class="areali"><span class="num">0.9</span>元</li>
+
+                  <li class="datali">14分钟审核</li>
+                </ol>
+              </div>
+              <div class="task_min">
+                <div>
+                  <h2 class="tit">oyo微信扫码注册</h2>
+                </div>
+                <ol>
+                  <li class="datali">剩余86次</li>
+                  <li class="stateli">2小时前</li>
+
+                </ol>
+                <ol>
+                  <li class="tagli">
+
+                  </li>
+                </ol>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li task-id="MFcwdnJJQmljKzQ9" category_1="1">
+
+            <i class="task_type  task_icon_register"></i>
+
+
+
+            <div class="alist">
+
+
+
+              <div class="task_r">
+                <ol>
+                  <li class="areali"><span class="num">17.5</span>元</li>
+
+                  <li class="datali">19小时审核</li>
+                </ol>
+              </div>
+              <div class="task_min">
+                <div>
+                  <h2 class="tit">京东白条</h2>
+                </div>
+                <ol>
+                  <li class="datali">剩余8次</li>
+                  <li class="stateli">2018-12-18</li>
+
+                </ol>
+                <ol>
+                  <li class="tagli">
+
+                  </li>
+                </ol>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li task-id="aGNVWE9CUzROcDQ9" category_1="1">
+
+            <i class="task_type  task_icon_register"></i>
+
+
+
+            <div class="alist">
+
+
+
+              <div class="task_r">
+                <ol>
+                  <li class="areali"><span class="num">8.9</span>元</li>
+
+                  <li class="limitedli">7.4元/次</li>
+
+                  <li class="datali">129小时审核</li>
+                </ol>
+              </div>
+              <div class="task_min">
+                <div>
+                  <h2 class="tit">支付宝纯手机注册</h2>
+                </div>
+                <ol>
+                  <li class="datali">剩余270次</li>
+                  <li class="stateli">2018-12-17</li>
+
+                </ol>
+                <ol>
+                  <li class="tagli">
+
+                    <span class="tagspan" style="background-color:#fe7418">限时提价</span>
+
+
+                  </li>
+                </ol>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li task-id="MW12NWpDQWdzcW89" category_1="1">
+
+            <i class="task_type  task_icon_register"></i>
+
+
+
+            <div class="alist">
+
+
+
+              <div class="task_r">
+                <ol>
+                  <li class="areali"><span class="num">2.3</span>元</li>
+
+                  <li class="limitedli">1.9元/次</li>
+
+                  <li class="datali">5小时审核</li>
+                </ol>
+              </div>
+              <div class="task_min">
+                <div>
+                  <h2 class="tit">花生日记购物省钱APP体验</h2>
+                </div>
+                <ol>
+                  <li class="datali">剩余145次</li>
+                  <li class="stateli">2018-12-22</li>
+
+                </ol>
+                <ol>
+                  <li class="tagli">
+
+                    <span class="tagspan" style="background-color:#fe7418">限时提价</span>
+
+
+                  </li>
+                </ol>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li task-id="QlBZV1dabG1GOG89" category_1="1">
+
+            <i class="task_type  task_icon_register"></i>
+
+
+
+            <div class="alist">
+
+
+
+              <div class="task_r">
+                <ol>
+                  <li class="areali"><span class="num">14.9</span>元</li>
+
+                  <li class="datali">34小时审核</li>
+                </ol>
+              </div>
+              <div class="task_min">
+                <div>
+                  <h2 class="tit">邮政银行直销银行卡绑定易操作通过率高</h2>
+                </div>
+                <ol>
+                  <li class="datali">剩余217次</li>
+                  <li class="stateli">2018-12-20</li>
+
+                </ol>
+                <ol>
+                  <li class="tagli">
+
+                  </li>
+                </ol>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li task-id="bVBoV0YwWFQ5c009" category_1="1">
+
+            <i class="task_type  task_icon_register"></i>
+
+
+
+            <div class="alist">
+
+
+
+              <div class="task_r">
+                <ol>
+                  <li class="areali"><span class="num">1.15</span>元</li>
+
+                  <li class="datali">30小时审核</li>
+                </ol>
+              </div>
+              <div class="task_min">
+                <div>
+                  <h2 class="tit">好省APP-下载注册</h2>
+                </div>
+                <ol>
+                  <li class="datali">剩余42次</li>
+                  <li class="stateli">前天</li>
+
+                </ol>
+                <ol>
+                  <li class="tagli">
+
+                  </li>
+                </ol>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li task-id="dUxuNktHRHRxQzA9" category_1="1">
+
+            <i class="task_type  task_icon_register"></i>
+
+
+
+            <div class="alist">
+
+
+
+              <div class="task_r">
+                <ol>
+                  <li class="areali"><span class="num">0.5</span>元</li>
+
+                  <li class="datali">43小时审核</li>
+                </ol>
+              </div>
+              <div class="task_min">
+                <div>
+                  <h2 class="tit">华为账号纯注册</h2>
+                </div>
+                <ol>
+                  <li class="datali">剩余438次</li>
+                  <li class="stateli">前天</li>
+
+                </ol>
+                <ol>
+                  <li class="tagli">
+
+                  </li>
+                </ol>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li task-id="UjVEaUdId2ZYUGs9" category_1="1">
+
+            <i class="task_type  task_icon_register"></i>
+
+
+
+            <div class="alist">
+
+
+
+              <div class="task_r">
+                <ol>
+                  <li class="areali"><span class="num">29.9</span>元</li>
+
+                  <li class="datali">16小时审核</li>
+                </ol>
+              </div>
+              <div class="task_min">
+                <div>
+                  <h2 class="tit">360借条-简单出额度</h2>
+                </div>
+                <ol>
+                  <li class="datali">剩余138次</li>
+                  <li class="stateli">2018-11-27</li>
+
+                </ol>
+                <ol>
+                  <li class="tagli">
+
+                  </li>
+                </ol>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li task-id="MG81eXdnOS9pWjA9" category_1="5">
+
+            <i class="task_type  task_icon_other"></i>
+
+
+
+            <div class="alist">
+
+
+
+              <div class="task_r">
+                <ol>
+                  <li class="areali"><span class="num">3.5</span>元</li>
+
+                  <li class="limitedli">2.9元/次</li>
+
+                  <li class="datali">16小时审核</li>
+                </ol>
+              </div>
+              <div class="task_min">
+                <div>
+                  <h2 class="tit">关注【日化最前线】公众号</h2>
+                </div>
+                <ol>
+                  <li class="datali">剩余270次</li>
+                  <li class="stateli">2018-12-21</li>
+
+                </ol>
+                <ol>
+                  <li class="tagli">
+
+                    <span class="tagspan" style="background-color:#fe7418">限时提价</span>
+
+
+                  </li>
+                </ol>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li task-id="ZWVuTzhCTTAyQ0E9" category_1="1">
+
+            <i class="task_type  task_icon_register"></i>
+
+
+
+            <div class="alist">
+
+
+
+              <div class="task_r">
+                <ol>
+                  <li class="areali"><span class="num">1.4</span>元</li>
+
+                  <li class="datali">45小时审核</li>
+                </ol>
+              </div>
+              <div class="task_min">
+                <div>
+                  <h2 class="tit">爱上头条简单注册</h2>
+                </div>
+                <ol>
+                  <li class="datali">剩余49次</li>
+                  <li class="stateli">2018-11-28</li>
+
+                </ol>
+                <ol>
+                  <li class="tagli">
+
+                  </li>
+                </ol>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li task-id="bkJrajczc21YbVk9" category_1="1">
+
+            <i class="task_type  task_icon_register"></i>
+
+
+
+            <div class="alist">
+
+
+
+              <div class="task_r">
+                <ol>
+                  <li class="areali"><span class="num">3.4</span>元</li>
+
+                  <li class="datali">12小时审核</li>
+                </ol>
+              </div>
+              <div class="task_min">
+                <div>
+                  <h2 class="tit">乐卡APP</h2>
+                </div>
+                <ol>
+                  <li class="datali">剩余281次</li>
+                  <li class="stateli">2018-12-12</li>
+
+                </ol>
+                <ol>
+                  <li class="tagli">
+
+                  </li>
+                </ol>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li task-id="Zjg2UTM3SEVXdU09" category_1="1">
+
+            <i class="task_type  task_icon_register"></i>
+
+
+
+            <div class="alist">
+
+
+
+              <div class="task_r">
+                <ol>
+                  <li class="areali"><span class="num">1.05</span>元</li>
+
+                  <li class="datali">19小时审核</li>
+                </ol>
+              </div>
+              <div class="task_min">
+                <div>
+                  <h2 class="tit">小桔文摘</h2>
+                </div>
+                <ol>
+                  <li class="datali">剩余67次</li>
+                  <li class="stateli">2018-11-12</li>
+
+                </ol>
+                <ol>
+                  <li class="tagli">
+
+                  </li>
+                </ol>
+              </div>
+
+
+            </div>
+          </li>
+
+          <li task-id="cnZERERBcGdQaWs9" category_1="1">
+
+            <i class="task_type  task_icon_register"></i>
+
+
+
+            <div class="alist">
+
+
+
+              <div class="task_r">
+                <ol>
+                  <li class="areali"><span class="num">1.9</span>元</li>
+
+                  <li class="datali">27小时审核</li>
+                </ol>
+              </div>
+              <div class="task_min">
+                <div>
+                  <h2 class="tit">下载注册 - 玉米豆APP</h2>
+                </div>
+                <ol>
+                  <li class="datali">剩余135次</li>
+                  <li class="stateli">2018-11-25</li>
+
+                </ol>
+                <ol>
+                  <li class="tagli">
+
+                  </li>
+                </ol>
+              </div>
+
+
+            </div>
+          </li>
+
+        </ul>
+        <!-- 加载提示符 -->
+        <div class="infinite-scroll-preloader" style="display: block;">
+          <div class="preloader"></div>
+        </div>
+        <script id="t_task_list" type="text/template7">
+    {{#each data}}
+    <li task-id="{{id}}" category_1="{{category_1}}">
+      {{#js_compare "this.isCallbackTask == 0 "}}
+        <i class='task_type  {{#js_compare "this.category_1===1"}}task_icon_register{{/js_compare}}{{#js_compare "this.category_1===2"}}task_icon_spread{{/js_compare}}{{#js_compare "this.category_1===3 "}}task_icon_survey{{/js_compare}}{{#js_compare "this.category_1===4 "}}task_icon_creditcard{{/js_compare}}{{#js_compare "this.category_1===5 "}}task_icon_other{{/js_compare}}{{#js_compare "this.category_1===6 "}}task_icon_callback{{/js_compare}}'></i>
+      {{/js_compare}}
+      {{#js_compare "this.isCallbackTask == 1 "}}
+        <i class='task_type  task_icon_callback'></i>
+      {{/js_compare}}
+      
+      <div class="alist">
+        
+          
+          
+            <div class="task_r">
+              <ol>
+              <li class="areali"><span class="num">{{price}}</span>元</li>
+              {{#js_compare " this.old_price < this.price "}}
+              <li class="limitedli">{{old_price}}元/次</li>
+              {{/js_compare}}
+              <li class="datali">{{avg_review_time}}</li>
+            </ol>	
+            </div>
+            <div class="task_min">
+            <div>
+              <h2 class="tit">{{title}}</h2> 
+            </div>
+            <ol>
+              <li class="datali">剩余{{task_min_num}}次</li>
+              <li class="stateli">{{create_time}}</li>
+              {{#if this.state}}
+              <li class="stateli">{{state}}</li>
+              {{/if}}
+            </ol>
+            <ol>
+              <li class="tagli">
+              {{#each labels}}
+              <span class="tagspan" style="background-color:{{color}}">{{name}}</span>
+              {{#js_compare "this.name=='已完成'"}}
+              <span class="tagdone"></span>
+              {{/js_compare}}
+              {{/each}}
+              </li>					
+            </ol>
+            </div>
+          
+        
+      </div>
+    </li>
+    {{/each}}
+              </script>
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+
+</body>
+
+</html>

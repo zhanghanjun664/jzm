@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			canvas{
+				background-color: #EAEAEA;
+				width: 100%;
+				height: 400px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="">
+				<canvas ></canvas>
+				<button>点即</button>
+		</div>
+		
+		<script src="js/utils/jquery3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			var canvas = document.getElementsByTagName('canvas')[0]
+			var ctx = canvas.getContext('2d')
+			var canvasWidth = $(window).width();
+			var canvasHeight = 400;
+			canvas.width = canvasWidth*2;
+			canvas.height = canvasHeight*2;
+			ctx.scale(2, 2)
+//			var imgBox = [
+//				'img/1.jpg',
+//				'img/2.jpg',
+//				'img/3.jpg',
+//				'img/4.jpg',
+//				'img/5.jpg',
+//			]
+      var imgBox = [
+        'img/test.jpg',
+        'img/test2.png',
+        'img/icon_gift.png',
+      ]
+			var progress = 0;
+			
+			for (var i = 0; i<imgBox.length; i++) {
+				var img = new Image()
+				img.src = imgBox[i];
+				img.onload = function(){
+					progress++;		
+					console.log('当前进度：' + progress + '/' + imgBox.length)
+					if(progress == imgBox.length){
+						console.log('加载完了')
+					}
+				}
+			}
+			
+			function Present(type){
+				this.x = canvasWidth;
+				this.y = canvasHeight - 100;
+				this.width = 60;
+				this.height = 80;
+				var img = new Image();
+				img.src = imgBox[rnd(0,2)];
+				this.obj = img;
+				this.hadCatch = false;
+			}
+			Present.prototype.draw = function(){
+				ctx.drawImage(this.obj, this.x, this.y, this.width, this.height)
+			}
+			
+			var num = 0,preBox = [];
+			
+			
+			
+			move()
+			function move(){
+				ctx.clearRect(0, 0, canvasWidth, canvasHeight)
+				
+				
+				if(num%100 == 0){
+					preBox.push(new Present())
+				}
+				num++;
+				
+				//礼物动起来
+				for (var i = 0; i < preBox.length; i++) {
+<<<<<<< HEAD
+				  //超出左边删除
+=======
+>>>>>>> eb152f7171b06c15d351343c18024e2399b5d74b
+					if(preBox[i].x < (-1)*preBox[i].width){
+						preBox.splice(i,1);
+						i--;
+						continue
+					}
+					//碰撞
+					if(catchPresent){
+						var center = preBox[i].x + preBox[i].width/2;
+						if(Math.abs(center - canvasWidth/2) < 20 ){
+							console.log('夹第:'+i)
+							preBox[i].hadCatch = true;
+							catchPresent = false;
+						}
+						
+					}
+					
+<<<<<<< HEAD
+					//被夹中
+					if(preBox[i].hadCatch){
+						preBox[i].x = (canvasWidth - preBox[i].width)/2
+						preBox[i].y-=2;
+						if(preBox[i].y<0){
+						  preBox.splice(i,1);
+						  i--;
+						  continue
+=======
+					//向上拉
+					if(preBox[i].hadCatch){
+						preBox[i].x = (canvasWidth - preBox[i].width)/2
+						preBox[i].y--;
+						if(preBox[i].y < 0){
+							preBox.splice(i,1);
+							i--;
+							continue
+>>>>>>> eb152f7171b06c15d351343c18024e2399b5d74b
+						}
+						
+					}else{
+						preBox[i].x--;
+					}
+					
+					preBox[i].draw()
+					
+					
+				}
+//				console.log(preBox)
+				
+				window.requestAnimationFrame(move)
+			}
+<<<<<<< HEAD
+				
+=======
+//			document.onclick = function(){
+//				if(!move){
+//					move()
+//				}else{
+//					move = null					
+//				}
+//			}
+>>>>>>> eb152f7171b06c15d351343c18024e2399b5d74b
+			var catchPresent = false;
+			$("button").click(function(){
+				catchPresent = !catchPresent;
+				console.log(catchPresent)
+			})
+			
+			function rnd(min, max){
+				return Math.round(Math.random()*(max - min) + min)
+			}
+			
+		</script>
+		
+	</body>
+</html>

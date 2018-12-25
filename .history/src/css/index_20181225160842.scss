@@ -1,0 +1,28 @@
+@function rem($flexible) {
+  @if $flexible !=0 {
+    $flexible: $flexible/750*10+rem;
+  }
+  @return $flexible;
+}
+
+.wrap {
+  padding-bottom: rem(30);
+}
+
+.bar {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  height: rem(88);
+  padding-right: rem(10);
+  padding-left: rem(10);
+  background-color: #f7f7f8;
+  border-bottom: 1px solid #e7e7e7;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

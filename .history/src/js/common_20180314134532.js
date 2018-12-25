@@ -22,7 +22,7 @@ if(!userId){
 
 var QRCodeId = "";
 //获取用户信息
-// getUserInfo()
+getUserInfo()
 function getUserInfo(){
 	ajax({
 		type:"post",
