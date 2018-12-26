@@ -21,30 +21,136 @@
   height: rem(88);
   padding-right: rem(20);
   padding-left: rem(20);
-  background-color: #fff;
-  // border-bottom: 1px solid #e7e7e7;
+  background-color: #fff; // border-bottom: 1px solid #e7e7e7;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #fe7418;
 }
 
-.m-api div{
+.m-api div {
   float: left;
+  img {
+    width: 100%;
+    display: block;
+  }
 }
 
 .m-api_cell1 {
   width: 41.33%;
-  img{
-    width: 100%;
-  }
 }
 
 .m-api_cell2 {
   width: 58.67%;
 }
 
-.m-api_cell3, .m-api_cell4 {
+.m-api_cell3,
+.m-api_cell4 {
   width: 29.335%;
+}
+
+.loc_box {
+  margin-bottom: 8px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  height: rem(88);
+  text-align: center;
+  position: relative;
+  .slt {
+    flex: 1;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  >.active {
+    color: #fe7418;
+  }
+  .f-cb-box {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    >.active {
+      display: block;
+    }
+  }
+  .f-cb {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    z-index: 9;
+    display: none;
+    li {
+      display: flex;
+      align-items: center;
+      padding: 0 rem(32);
+      height: rem(88);
+      border-top: rem(1) solid #efefef;
+      color: #333;
+      justify-content: space-between;
+      .iconfont{
+        display: none;
+        font-size: rem(28);
+      }
+    }
+    .active{
+      .iconfont{
+        display: block;
+        color: #b7d893;
+
+      }
+    }
+  }
+  .m-loc_fixed {
+    display: none;
+    position: fixed;
+    top: rem(500);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 8; // background: #000;
+    // opacity: .5;
+    background-color: rgba(0, 0, 0, .5)
+  }
+}
+
+// 列表
+.m-list{
+  .num{
+    color: #fe7418;
+  }
+  .didiao{
+    color: #919191;
+    font-size: rem(24);
+  }
+  > li{
+    display: flex;
+    align-items: center;
+    height: rem(160);
+    border-bottom: rem(1) solid #f8f7f7;
+    padding: rem(16);
+    background-color: #fff;
+    >img{
+      width: rem(80);
+      margin-right: rem(16);
+    }
+    .alist{
+      flex: 1;
+      .tit{
+        font-size: rem(32);
+        color: #333;
+        margin-bottom: rem(16)
+  
+      }
+    }
+    .task_r{
+      padding-left: rem(16);
+    }
+  }
+
+
 }

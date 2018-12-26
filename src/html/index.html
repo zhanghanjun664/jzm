@@ -7,14 +7,20 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>手机赚钱</title>
   <script src="../js/utils/flexible.js" type="text/javascript" charset="utf-8"></script>
+
+  <!-- weui -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.3/style/weui.min.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.1/css/jquery-weui.min.css">
+
   <link rel="stylesheet" type="text/css" href="../css/common.css" />
   <link rel="stylesheet" type="text/css" href="../css/index.css" />
+
 </head>
 
 <body>
   <div class="wrap">
     <header class="bar bar-nav">
-      <div class="back">返回</div>
+      <div class="iconfont icon-fanhui back"></div>
       <div class="myTask">我的任务</div>
 
     </header>
@@ -23,31 +29,249 @@
 
       <div class="m-api_cell1" data-type="1" data-value="86">
         <img src="http://img.jianzhimao.com/activity/prize/20180910/8bf4784e2a56ff62443314492064a0a7.jpg">
-
       </div>
-
       <div class="m-api_cell2" data-type="1" data-value="12">
         <img src="http://img.jianzhimao.com/activity/prize/20180713/15da06608e191cc773a0821f9d1ac90c.jpg">
-
       </div>
-
       <div class="m-api_cell3" data-type="1" data-value="78">
         <img src="http://img.jianzhimao.com/activity/prize/20180820/eef01d1c80a2bf15e08c413b6c67a6e3.jpg">
-
       </div>
-
       <div class="m-api_cell4" data-type="1" data-value="68">
         <img src="http://img.jianzhimao.com/activity/prize/20180607/748ca576e1e13a0eebbf447e34a9bdb9.jpg">
-
       </div>
 
     </div>
+
+    <div class="" id="filter_wrap">
+      <!-- 地区筛选 -->
+      <div class="loc_box">
+        <div class="slt">
+          <span class="iconfont icon-leimupinleifenleileibie"></span>
+          <span class="slt_txt">分类</span>
+
+        </div>
+        <div class="slt">
+          <span class="iconfont icon-paixu-jiang"></span>
+          <span class="slt_txt">排序</span>
+        </div>
+
+        <div class="f-cb-box">
+          <ul class="f-cb fenlei" type="fenlei">
+            <li class="active" state="" type="1">
+              <span>不限</span>
+              <i class="iconfont icon-gouxuan"></i>
+            </li>
+            <li class="" state="" type="2">
+              <span>办信用卡</span>
+              <i class="iconfont icon-gouxuan"></i>
+            </li>
+            <li class="" state="" type="3">
+              <span>其他</span>
+              <i class="iconfont icon-gouxuan"></i>
+            </li>
+
+          </ul>
+
+          <ul class="f-cb paixu" type="paixu">
+            <li class="" state="" type="task-type">
+              <span>最新发布</span>
+              <i class="iconfont icon-gouxuan"></i>
+            </li>
+            <li class="" state="" type="task-type">
+              <span>单价最高</span>
+              <i class="iconfont icon-gouxuan"></i>
+            </li>
+            <li class="active" state="" type="task-type">
+              <span>综合排序</span>
+              <i class="iconfont icon-gouxuan"></i>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 筛选栏弹出时，遮罩层 -->
+        <div class="m-loc_fixed"></div>
+      </div>
+    </div>
+
+
+    <!-- 列表 -->
+    <div class="g-apply_box">
+      <ul class="m-list">
+        <li>
+          <img src="https://img.jianzhimao.com/static/m3/static/css/img/task/icon_creditcard.png" alt="">
+          <div class="alist">
+
+            <div class="task_min">
+              <div class="tit">光大信用卡申请-初审通过</div>
+              <div class="">
+                <span class="didiao">剩余41次</span>
+                <span class="didiao">刚刚</span>
+
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="task_r">
+            <ul>
+              <li class="areali"><span class="num">59.9</span>元</li>
+
+              <li class="didiao">37小时审核</li>
+            </ul>
+          </div>
+
+        </li>
+
+        <li>
+          <img src="https://img.jianzhimao.com/static/m3/static/css/img/task/icon_creditcard.png" alt="">
+          <div class="alist">
+
+            <div class="task_min">
+              <div class="tit">光大信用卡申请-初审通过</div>
+              <div class="">
+                <span class="didiao">剩余41次</span>
+                <span class="didiao">刚刚</span>
+
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="task_r">
+            <ul>
+              <li class="areali"><span class="num">59.9</span>元</li>
+
+              <li class="didiao">37小时审核</li>
+            </ul>
+          </div>
+
+        </li>
+
+        <li>
+          <img src="https://img.jianzhimao.com/static/m3/static/css/img/task/icon_creditcard.png" alt="">
+          <div class="alist">
+
+            <div class="task_min">
+              <div class="tit">光大信用卡申请-初审通过</div>
+              <div class="">
+                <span class="didiao">剩余41次</span>
+                <span class="didiao">刚刚</span>
+
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="task_r">
+            <ul>
+              <li class="areali"><span class="num">59.9</span>元</li>
+
+              <li class="didiao">37小时审核</li>
+            </ul>
+          </div>
+
+        </li>
+
+        <li>
+          <img src="https://img.jianzhimao.com/static/m3/static/css/img/task/icon_creditcard.png" alt="">
+          <div class="alist">
+
+            <div class="task_min">
+              <div class="tit">光大信用卡申请-初审通过</div>
+              <div class="">
+                <span class="didiao">剩余41次</span>
+                <span class="didiao">刚刚</span>
+
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="task_r">
+            <ul>
+              <li class="areali"><span class="num">59.9</span>元</li>
+
+              <li class="didiao">37小时审核</li>
+            </ul>
+          </div>
+
+        </li>
+
+        <li>
+          <img src="https://img.jianzhimao.com/static/m3/static/css/img/task/icon_creditcard.png" alt="">
+          <div class="alist">
+
+            <div class="task_min">
+              <div class="tit">光大信用卡申请-初审通过</div>
+              <div class="">
+                <span class="didiao">剩余41次</span>
+                <span class="didiao">刚刚</span>
+
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="task_r">
+            <ul>
+              <li class="areali"><span class="num">59.9</span>元</li>
+
+              <li class="didiao">37小时审核</li>
+            </ul>
+          </div>
+
+        </li>
+
+        <li>
+          <img src="https://img.jianzhimao.com/static/m3/static/css/img/task/icon_creditcard.png" alt="">
+          <div class="alist">
+
+            <div class="task_min">
+              <div class="tit">光大信用卡申请-初审通过</div>
+              <div class="">
+                <span class="didiao">剩余41次</span>
+                <span class="didiao">刚刚</span>
+
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="task_r">
+            <ul>
+              <li class="areali"><span class="num">59.9</span>元</li>
+
+              <li class="didiao">37小时审核</li>
+            </ul>
+          </div>
+
+        </li>
+
+        
+        
+      </ul>
+          <div class="weui-loadmore">
+            <i class="weui-loading"></i>
+            <span class="weui-loadmore__tips">正在加载</span>
+          </div>
+    </div>
+
 
 
 
   </div>
 
   <script src="../js/utils/jquery3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+
+  <!-- weui -->
+  <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+
   <script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
   <script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
 
