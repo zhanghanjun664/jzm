@@ -4,10 +4,12 @@
   padding: 0;
   font-size: 0.4rem; }
 
-html, body {
-  color: #666666;
+html,
+body {
+  color: #333;
   font-weight: normal;
-  font-family: "微软雅黑"; }
+  font-family: "微软雅黑";
+  font-size: 0.32rem; }
 
 .show {
   visibility: visible; }
@@ -18,14 +20,16 @@ html, body {
 .clearfix {
   overflow: hidden; }
 
-ul, li, ol {
+ul,
+li,
+ol {
   list-style: none; }
 
 @font-face {
   font-family: "iconfont";
-  src: url("//at.alicdn.com/t/font_985807_p0vw7hqiej.eot?t=1545812256793");
+  src: url("//at.alicdn.com/t/font_985807_3ujct5s002j.eot?t=1545901245310");
   /* IE9*/
-  src: url("//at.alicdn.com/t/font_985807_p0vw7hqiej.eot?t=1545812256793#iefix") format("embedded-opentype"), url("data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAWQAAsAAAAACXAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsP6z7U9TLzIAAAE8AAAARAAAAFY8iEqWY21hcAAAAYAAAABrAAABstNYn8JnbHlmAAAB7AAAAX4AAAL04M/jxWhlYWQAAANsAAAALwAAADYVwvg7aGhlYQAAA5wAAAAeAAAAJAnvBt1obXR4AAADvAAAABMAAAAUF1cAAGxvY2EAAAPQAAAADAAAAAwB5gJmbWF4cAAAA9wAAAAfAAAAIAEXAIxuYW1lAAAD/AAAAUUAAAJtPlT+fXBvc3QAAAVEAAAATAAAAGK0dzhdeJxjYGRgYOBikGPQYWB0cfMJYeBgYGGAAJAMY05meiJQDMoDyrGAaQ4gZoOIAgCKIwNPAHicY2BkWc04gYGVgYOpk+kMAwNDP4RmfM1gxMjBwMDEwMrMgBUEpLmmMDg8E3r+k7nhfwNDDHMDQwNQmBEkBwAorg2aeJztkTEOgDAIRR9tNcY4OfUQzs4eyMlDt2dwqlAcPISfvKb8AAMAAxCVTUkgF4LpVFe6H5m7nzg0n5kIhLKWXPd6twbf/yvROg+bHrRXZ8nIr6W/x5sl255jVyjZ0Y1Rd8dq6u0gD2IPGn8AeJylUs1OwkAQnulKW420rrRdIgrS0laiYPgrRhG5cvLmDTx6Um8eFS8e8CU8+xTwAj6DiQdewYOuTmM0egAT3Wz2m5lvv28nkwUdaLEB64AJOdiGAziEYziHKwD0DNTsLIpaG5uNMgpKvTKGDUprVP6NZ//UY2cQdRG70QcsYCEzyBTwEwaz2JlSCbONv5gY3r4xhYzSmUHK0V+VNGyAt3uVsx4sAySCEMvYRjFPRxY1VDXmZh155iilVhqPlFO7VVWt12M7f4QWXjh7JbTlSHkU6sZu+uUpzUAhvzvmsj6swhrZu6qGBtqWqJBhPPB6EMbuNPewoowdPymHJhd4bXh2MUKLywesL6UwKrIeN+XQ8G1/RV4aJlVEaGAVa0Yg6CZ9nzl6a8wmbB8sWIct2AHwm3HjJjWuem7Q4PWo6th+vupYqpd3g3qUmhKzfkvPZXX9RktqOhfCFa8mPlPAZZzyKfHlianznDlZTDDB2WZc10lLW97+RIB3nYV8+QAAeJxjYGRgYADigw5L+OL5bb4ycLMwgMANzygFBP1/AZsgcxyQy8HABBIFAP+eCLsAeJxjYGRgYG7438AQwx7OAARsggyMDKiAFQBRQwLbAAB4nGNhYGBgAWL2cAgNwgAE5QBvAAAAAAAAxADsASIBenicY2BkYGBgZWhg4GAAASYg5gJCBob/YD4DABYJAaQAeJxlj01OwzAQhV/6B6QSqqhgh+QFYgEo/RGrblhUavdddN+mTpsqiSPHrdQDcB6OwAk4AtyAO/BIJ5s2lsffvHljTwDc4Acejt8t95E9XDI7cg0XuBeuU38QbpBfhJto41W4Rf1N2MczpsJtdGF5g9e4YvaEd2EPHXwI13CNT+E69S/hBvlbuIk7/Aq30PHqwj7mXle4jUcv9sdWL5xeqeVBxaHJIpM5v4KZXu+Sha3S6pxrW8QmU4OgX0lTnWlb3VPs10PnIhVZk6oJqzpJjMqt2erQBRvn8lGvF4kehCblWGP+tsYCjnEFhSUOjDFCGGSIyujoO1Vm9K+xQ8Jee1Y9zed0WxTU/3OFAQL0z1xTurLSeTpPgT1fG1J1dCtuy56UNJFezUkSskJe1rZUQuoBNmVXjhF6XNGJPyhnSP8ACVpuyAAAAHicY2BigAAuBuyAlZGJkZmRhZGVkY1BPCc1M7e0IDMPSKelgkggSspMZU/PL60oTcxjS0vMyyjN5C5IzKwo1c3KTMxLZ2AAADIlE7M=") format("woff"), url("//at.alicdn.com/t/font_985807_p0vw7hqiej.ttf?t=1545812256793") format("truetype"), url("//at.alicdn.com/t/font_985807_p0vw7hqiej.svg?t=1545812256793#iconfont") format("svg");
+  src: url("//at.alicdn.com/t/font_985807_3ujct5s002j.eot?t=1545901245310#iefix") format("embedded-opentype"), url("data:application/x-font-woff;charset=utf-8;base64,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") format("woff"), url("//at.alicdn.com/t/font_985807_3ujct5s002j.ttf?t=1545901245310") format("truetype"), url("//at.alicdn.com/t/font_985807_3ujct5s002j.svg?t=1545901245310#iconfont") format("svg");
   /* iOS 4.1- */ }
 
 .iconfont {
@@ -43,6 +47,9 @@ ul, li, ol {
 
 .icon-fanhui:before {
   content: "\e612"; }
+
+.icon-fanhui1:before {
+  content: "\e623"; }
 
 .icon-paixu-jiang:before {
   content: "\e736"; }
@@ -119,89 +126,80 @@ ul, li, ol {
   flex: 1;
   color: #2490eb; }
 
-#headNav {
-  display: flex;
-  align-items: center;
-  background-color: #10aeff;
-  height: 1.2rem;
-  color: #fff; }
-
-#headNav img {
-  width: 0.48rem;
-  margin-right: 0.08rem; }
-
-.hn_box {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.hn_box > div {
-  flex: 1;
-  text-align: center;
-  border-left: 1px solid #88d7ff; }
-
-.go_free {
-  border-right: 1px solid #88d7ff; }
-
-.headNav_left, .headNav_right {
-  width: 2.13333rem;
-  text-align: center; }
-
-.btn {
-  width: 100%;
-  background-color: #10AEFF;
-  color: #fff;
-  line-height: 1.06667rem;
-  border-radius: 0.13333rem;
-  font-size: 0.45333rem;
-  border: none;
-  letter-spacing: 0.02667rem;
-  text-align: center; }
-
-input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
   color: #bdbdbd; }
 
-input:-moz-placeholder, textarea:-moz-placeholder {
+input:-moz-placeholder,
+textarea:-moz-placeholder {
   color: #bdbdbd; }
 
-.toast {
+.wrap {
+  padding-bottom: 0.21333rem;
+  background-color: #f3f3f3;
+  padding-top: 1.17333rem;
+  position: relative; }
+
+.bar {
+  margin-bottom: 0.26667rem;
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  width: 100%;
-  height: 100%;
-  line-height: 1.5;
-  display: none; }
-
-.toast_value {
-  position: absolute;
-  left: 0;
   right: 0;
-  margin: auto;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  text-align: center;
-  padding: 0.66667rem;
-  width: 50%;
-  border-radius: 10px;
-  font-size: 0.4rem; }
-
-.showQRCode {
-  text-align: center;
-  padding-top: 4rem;
-  position: fixed;
-  top: 0;
   left: 0;
-  width: 100%;
-  height: 100%; }
+  top: 0;
+  z-index: 10;
+  height: 1.17333rem;
+  padding-right: 0.26667rem;
+  padding-left: 0.26667rem;
+  background-color: #fff;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fe7418; }
+  .bar .center {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #333;
+    z-index: -1; }
+  .bar .iconfont {
+    font-size: 0.66667rem; }
 
-.showQRCode > div {
-  margin-top: 0.26667rem;
-  font-size: 0.48rem; }
+.num {
+  color: #fe7418; }
 
-.yearVip {
+.didiao {
+  color: #919191;
+  font-size: 0.32rem; }
+
+.weui-dialog .weui-dialog__btn {
+  color: #fe7418; }
+
+.weui-tab {
+  position: absolute;
+  top: 1.2rem;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+  .weui-tab .weui-navbar {
+    background-color: #fff;
+    height: 1.09333rem;
+    line-height: 1.09333rem; }
+    .weui-tab .weui-navbar .weui-navbar__item {
+      padding: 0;
+      color: #666; }
+      .weui-tab .weui-navbar .weui-navbar__item:after {
+        display: none; }
+    .weui-tab .weui-navbar .weui-bar__item--on {
+      color: #fe7418;
+      border-bottom: 0.02667rem solid #fe7418;
+      background-color: initial; }
+  .weui-tab .weui-tab__bd {
+    position: absolute;
+    width: 100%;
+    top: 0; }
+
+.weui-loadmore {
   display: none; }

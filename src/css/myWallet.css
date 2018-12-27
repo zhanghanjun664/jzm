@@ -1,0 +1,64 @@
+.wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
+  overflow: hidden; }
+
+.p1 {
+  background-color: #fe7418;
+  color: #fff;
+  padding: 0.34667rem 0.32rem 0.8rem;
+  height: 3.73333rem;
+  position: absolute;
+  top: 1.17333rem;
+  width: 100%;
+  box-sizing: border-box; }
+
+.money_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.53333rem; }
+  .money_box .money {
+    font-size: 0.77333rem; }
+  .money_box .btn {
+    width: 1.86667rem;
+    text-align: center;
+    line-height: 0.8rem;
+    border-radius: 0.10667rem;
+    border: 0.02667rem solid #fff; }
+
+.p2 {
+  position: absolute;
+  width: 100%;
+  top: 4.90667rem;
+  bottom: 0; }
+  .p2 .weui-tab {
+    top: 0; }
+
+.noData {
+  display: none;
+  padding-top: 0.53333rem;
+  text-align: center; }
+  .noData > img {
+    width: 3.73333rem;
+    margin-bottom: 0.10667rem; }
+  .noData p {
+    margin-bottom: 0.53333rem; }
+
+.shouru_box {
+  padding-bottom: 0.26667rem; }
+  .shouru_box li {
+    border-bottom: 0.01333rem solid #efefef;
+    padding: 0.34667rem;
+    background-color: #fff; }
+    .shouru_box li .title, .shouru_box li .desc {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .shouru_box li .title {
+      margin-bottom: 0.21333rem; }
+      .shouru_box li .title > div:nth-of-type(1) {
+        font-size: 0.42667rem; }

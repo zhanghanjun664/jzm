@@ -5,20 +5,128 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>我的任务</title>
   <script src="../js/utils/flexible.js" type="text/javascript" charset="utf-8"></script>
   <link rel="stylesheet" type="text/css" href="../css/common.css" />
   <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.3/style/weui.min.css">
   <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.1/css/jquery-weui.min.css">
+  <link rel="stylesheet" href="../css/myTask.css">
 </head>
 
 <body>
+  <div class="wrap">
+    <header class="bar">
+      <div class="iconfont icon-fanhui1 back"></div>
+      <div class="center">我的任务</div>
+      <div class="balance">余额:0.0元</div>
+
+    </header>
+
+    <!-- 容器 -->
+    <div class="weui-tab">
+      <div class="weui-navbar">
+        <a class="weui-navbar__item weui-bar__item--on" href="#tab1">全部</a>
+        <a class="weui-navbar__item" href="#tab2">进行中</a>
+        <a class="weui-navbar__item" href="#tab3">审核中</a>
+        <a class="weui-navbar__item" href="#tab4">已结束</a>
+
+      </div>
+      <div class="weui-tab__bd">
+        <div id="tab1" class="weui-tab__bd-item weui-tab__bd-item--active">
+          <ul class="m-list">
+            <li task-id='abc'>
+              <div class="liT">
+                <img src="../img/icon_other.png" alt=""
+                  class="task_type">
+                <div class="alist">
+                  <div class="tit">京东白条</div>
+                  <ol>
+                    <li class="didiao"><span class="num">17.50</span>元</li>
+                    <li class="didiao">剩余73次</li>
+                    <li class="didiao">前天</li>
+                  </ol>
+                </div>
+
+              </div>
 
 
-    <script src="../js/utils/jquery3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
-    <script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
-    <script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
+              <div class="cz">
+                <div class="item">
+                  <div class="zt didiao">已过期</div>
+                </div>
+                <div task-id="11783851" class="btn">删除</div>
+
+              </div>
+            </li>
+
+            <li task-id='zhj'>
+                <div class="liT">
+                  <img src="https://img.jianzhimao.com/static/m3/static/css/img/task/icon_register.png?v=43c1aa1" alt=""
+                    class="task_type">
+                  <div class="alist">
+                    <div class="tit">京东白条</div>
+                    <ol>
+                      <li class="didiao"><span class="num">17.50</span>元</li>
+                      <li class="didiao">剩余73次</li>
+                      <li class="didiao">前天</li>
+                    </ol>
+                  </div>
+  
+                </div>
+  
+  
+                <div class="cz">
+                  <div class="item">
+                    <div class="zt didiao">已过期</div>
+                  </div>
+                  <div task-id="11783851" class="btn">删除</div>
+  
+                </div>
+              </li>
+
+
+          </ul>
+          <div class="noData">
+            <img src="https://img.jianzhimao.com/static/m3/static/img/icon_no.png?v=65c804b" alt="">
+            <p class="didiao">暂无该任务</p>
+            <div class="goTask">去做任务</div>
+          </div>
+        </div>
+
+        <div id="tab2" class="weui-tab__bd-item">
+          <div class="noData">
+            <img src="https://img.jianzhimao.com/static/m3/static/img/icon_no.png?v=65c804b" alt="">
+            <p class="didiao">暂无该任务</p>
+            <div class="goTask">去做任务</div>
+          </div>
+
+        </div>
+
+        <div id="tab3" class="weui-tab__bd-item">
+          <div class="noData">
+            <img src="https://img.jianzhimao.com/static/m3/static/img/icon_no.png?v=65c804b" alt="">
+            <p class="didiao">暂无该任务</p>
+            <div class="goTask">去做任务</div>
+          </div>
+        </div>
+
+        <div id="tab4" class="weui-tab__bd-item">
+          <div class="noData">
+            <img src="https://img.jianzhimao.com/static/m3/static/img/icon_no.png?v=65c804b" alt="">
+            <p class="didiao">暂无该任务</p>
+            <div class="goTask">去做任务</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <script src="../js/utils/jquery3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+  <script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/myTask.js" type="text/javascript" charset="utf-8"></script>
 </body>
 
 </html>

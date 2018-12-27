@@ -5,7 +5,7 @@ $('.back').click(function(){
 })
 // 我的任务
 $('.myTask').click(function(){
-  // location.href = ''
+  location.href = 'myTask.html'
 })
 
 

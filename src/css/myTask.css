@@ -1,0 +1,61 @@
+.wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
+  overflow: hidden; }
+
+.m-list {
+  padding-bottom: 1.6rem; }
+  .m-list > li {
+    background-color: #fff;
+    margin-bottom: 0.4rem; }
+    .m-list > li .liT {
+      display: flex;
+      align-items: center;
+      padding: 0.4rem 0.21333rem;
+      border-bottom: 0.01333rem solid #e3e3e3; }
+    .m-list > li .task_type {
+      width: 1.06667rem;
+      height: 1.06667rem;
+      margin-right: 0.21333rem; }
+    .m-list > li .alist .tit {
+      margin-bottom: 0.10667rem; }
+    .m-list > li .alist ol {
+      display: flex;
+      align-items: center; }
+      .m-list > li .alist ol li {
+        margin-right: 0.4rem; }
+        .m-list > li .alist ol li .num {
+          font-size: 0.48rem; }
+    .m-list > li .cz {
+      height: 1.06667rem;
+      display: flex;
+      padding: 0 0.26667rem;
+      align-items: center;
+      justify-content: space-between; }
+      .m-list > li .cz .btn {
+        width: 1.86667rem;
+        border: 0.02667rem solid #bbb;
+        border-radius: 0.13333rem;
+        text-align: center; }
+
+.noData {
+  display: none;
+  padding-top: 0.53333rem;
+  text-align: center; }
+  .noData > img {
+    width: 3.73333rem;
+    margin-bottom: 0.10667rem; }
+  .noData p {
+    margin-bottom: 0.53333rem; }
+  .noData .goTask {
+    width: 7.46667rem;
+    border: 0.02667rem solid #fe7418;
+    color: #fe7418;
+    font-size: 0.45333rem;
+    line-height: 1.17333rem;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 0.13333rem; }

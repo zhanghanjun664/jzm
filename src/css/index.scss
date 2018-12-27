@@ -5,31 +5,6 @@
   @return $flexible;
 }
 
-.wrap {
-  padding-bottom: rem(30);
-  background-color: #f3f3f3;
-  padding-top: rem(88);
-}
-
-.bar {
-  margin-bottom: rem(20);
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  z-index: 10;
-  height: rem(88);
-  padding-right: rem(20);
-  padding-left: rem(20);
-  background-color: #fff; // border-bottom: 1px solid #e7e7e7;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #fe7418;
-}
-
 .m-api div {
   float: left;
   img {
@@ -122,10 +97,6 @@
 .m-list{
   .num{
     color: #fe7418;
-  }
-  .didiao{
-    color: #919191;
-    font-size: rem(24);
   }
   > li{
     display: flex;

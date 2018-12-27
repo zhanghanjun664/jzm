@@ -261,11 +261,18 @@ function formatDate(str,type){
 	return nTime
 }
 
-//二维码
-function showQRCode(url){
-	var html = '<div class="showQRCode">'+
-								'<img src="'+url+'"/>'+
-								'<div>请先关注公众号</div>'+
-							'</div>'
-	$("body").html(html)
+
+// 定义全局资源
+var TASK_ICON = {
+  0: '../img/icon_other.png',
+  1: '../img/icon_zhuce.png',
+  2: '../img/icon_caiji.png',
+  3: '../img/icon_xinyongka.png',
+
+}
+
+// 获取步骤icon
+function getStepIcon(num){
+  if(!num) return
+  return '../img/icon_step'+ num +'.png'
 }

@@ -1,26 +1,3 @@
-.wrap {
-  padding-bottom: 0.4rem;
-  background-color: #f3f3f3;
-  padding-top: 1.17333rem; }
-
-.bar {
-  margin-bottom: 0.26667rem;
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  z-index: 10;
-  height: 1.17333rem;
-  padding-right: 0.26667rem;
-  padding-left: 0.26667rem;
-  background-color: #fff;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: #fe7418; }
-
 .m-api div {
   float: left; }
   .m-api div img {
@@ -92,10 +69,6 @@
 
 .m-list .num {
   color: #fe7418; }
-
-.m-list .didiao {
-  color: #919191;
-  font-size: 0.32rem; }
 
 .m-list > li {
   display: flex;
