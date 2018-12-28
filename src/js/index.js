@@ -36,11 +36,6 @@ $('.m-loc_fixed').click(function(){
   hideOptions()
 })
 
-// 设置选中
-function setActive(el){
-  el.addClass('active').siblings().removeClass('active')
-}
-
 // 显示选项
 function showOptions(index){
   $('.m-loc_fixed').show()

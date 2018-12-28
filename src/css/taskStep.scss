@@ -1,0 +1,175 @@
+@function rem($flexible) {
+  @if $flexible !=0 {
+    $flexible: $flexible/750*10+rem;
+  }
+  @return $flexible;
+}
+
+.wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.p1 {
+  background-color: #fff;
+  width: 92%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  top: rem(120);
+  bottom: rem(30);
+  .title {
+    background-color: #fcfcfc;
+    position: relative;
+    .iconfont{
+      transition: .5s;
+      display: inline-block;
+    }
+    >div {
+      text-align: center;
+      line-height: rem(80);
+    }
+    .stepList {
+      background-color: #fcfcfc;
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      display: none;
+      li {
+        text-align: center;
+        line-height: rem(80);
+      }
+      >.active {
+        color: #fe7418;
+      }
+    }
+  }
+  .active{
+    .iconfont{
+      transform: rotate(-180deg)
+    }
+    >div{
+      color: #fe7418;
+    }
+    .stepList{
+      display: block;
+    }
+  }
+
+  // 步骤内容
+  .step {
+    padding: rem(24);
+    >div{
+      display: none;
+    }
+  }
+  .previewImg{
+    margin-top: rem(20);
+    li {
+      float: left;
+      width: rem(128);
+      height: rem(128);
+      margin-right: rem(16);
+      margin-bottom: rem(12);
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  .txt {
+    ul {
+    }
+  }
+
+  .link {
+    a {
+      margin: rem(60) 5%;
+      display: inline-block;
+      width: 90%;
+      border: rem(2) solid #fe7418;
+      color: #fe7418;
+      border-radius: rem(8);
+      text-align: center;
+      line-height: rem(80);
+    }
+  }
+
+  .txtarea {
+    textarea {
+      height: rem(200);
+      width: 100%;
+      box-sizing: border-box;
+      border: rem(2) solid #efefef;
+      // border-bottom: 0;
+      background: #f7f7f7;
+      padding: rem(16);
+      margin: rem(20) 0;
+      border-radius: 0;
+      resize: none;
+    }
+  }
+
+  .uploadImg{
+    .upload{
+      margin: rem(40) 0;
+      ul{
+        background-color: #f7f7f7;
+        border: rem(2) solid #efefef;
+        border-radius: rem(4);
+        padding: rem(24) rem(12);
+      }
+      .uploadBtn{
+        position: relative;
+        input{
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          opacity: 0;
+        }
+      }
+
+    }
+
+  }
+
+
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    height: rem(160);
+    width: 100%;
+    border-top: rem(2) solid #efefef;
+    text-align: center;
+    background-color: #fff;
+    .btn {
+      width: 90%;
+      line-height: rem(80);
+      color: #fff;
+      background-color: #fe7418;
+      border-radius: rem(8);
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: auto;
+      left: 0;
+      right: 0;
+      display: none;
+    }
+    .btn[disabled] {
+      opacity: .5;
+    }
+  }
+}
+
+.weui-photo-browser-modal {
+  z-index: 99;
+}

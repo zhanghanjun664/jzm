@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>我的任务</title>
+  <script src="../js/utils/flexible.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="../css/common.css" />
+  <link rel="stylesheet" href="https://cdn.bootcss.com/weui/1.1.3/style/weui.min.css">
+  <link rel="stylesheet" href="https://cdn.bootcss.com/jquery-weui/1.2.1/css/jquery-weui.min.css">
+  <link rel="stylesheet" href="../css/taskStep.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="bar">
+      <div class="iconfont icon-fanhui1 back"></div>
+      <div class="center">任务步骤</div>
+
+    </header>
+
+    <div class="p1">
+      <div class="title " step-num='1'>
+        <div class=""><span class="stepName">提交图片（4/4）</span> <span class="iconfont icon-xiangxia"></span></div>
+        <ul class="stepList">
+          <li class="active">图文说明（1/4）</li>
+          <li>链接操作（2/4）</li>
+          <li>链接操作（3/4）</li>
+          <li>提交图片（4/4）</li>
+        </ul>
+      </div>
+      <div class="step">
+        <div class="txt step1" pass='true'>
+          <div>步骤说明</div>
+          <div>我是步骤说明</div>
+          <ul class="clearfix previewImg previewBox">
+            <li><img src="http://img.jianzhimao.com/miaotask/comp/6259790/b3b53c5acc13dcba8d52fd24a7ab07e1.jpg"></li>
+            <li><img src="http://img.jianzhimao.com/miaotask/comp/6259790/659f7447a2f97ad0ef7decf72afeb14e.jpg"></li>
+
+          </ul>
+        </div>
+
+        <div class="link step2" pass='true'>
+          <div>步骤说明</div>
+          <div>我是步骤说明</div>
+          <a href="http://baidu.com" target="_blank">打开链接</a>
+          <div>注意：建议在wifi环境下完成下载，哈哈德玛西亚</div>
+        </div>
+
+        <div class="txtarea step3" pass='false'>
+          <div>步骤说明</div>
+          <div>我是步骤说明</div>
+          <textarea placeholder="请输入内容" ></textarea>
+          <div>
+            <p>示例文本</p>
+            <p>张三-18659595959</p>
+          </div>
+        </div>
+
+        <div class="uploadImg step4" pass='false'>
+          <div>步骤说明</div>
+          <div>我是步骤说明</div>
+          <div class="upload">
+            <ul class="clearfix previewImg">
+              <li class="uploadBtn">
+                <img src="../img/upImg.png" >
+                <input type="file" >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div>步骤说明</div>
+            <ul class="clearfix previewImg previewBox">
+              <li><img src="http://img.jianzhimao.com/miaotask/comp/6259790/b3b53c5acc13dcba8d52fd24a7ab07e1.jpg"></li>
+              <li><img src="http://img.jianzhimao.com/miaotask/comp/6259790/659f7447a2f97ad0ef7decf72afeb14e.jpg"></li>
+
+            </ul>
+          </div>
+        </div>
+
+
+      </div>
+
+
+      <div class="footer">
+        <div class="btn next" disabled>下一步</div>
+        <div class="btn submit" >提交任务</div>
+
+      </div>
+    </div>
+
+    
+
+
+
+  </div>
+
+
+  <script src="../js/utils/jquery3.2.1.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="https://cdn.bootcss.com/jquery-weui/1.2.1/js/jquery-weui.min.js"></script>
+  <!-- <script src="../js/utils/swiper-3.4.2.jquery.min.js"></script> -->
+  <script src="../js/utils/swiper.js"></script>
+  <script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+  <script src="../js/taskStep.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

@@ -276,3 +276,30 @@ function getStepIcon(num){
   if(!num) return
   return '../img/icon_step'+ num +'.png'
 }
+
+
+// 图片预览所需
+// 获取图片列表
+function getImgListByClass(cls) {
+  var imgList = []
+  $(cls + ' img').each(function (index, item) {
+    imgList.push(item.src)
+  })
+  return imgList
+}
+// 初始化图片预览组件
+function initPreviewComp(items, index) {
+  return $.photoBrowser({
+    items: items,
+    initIndex: index,
+    onClose: function(){
+      $('.weui-photo-browser-modal').remove()
+    }
+  });
+}
+
+
+// 设置选中
+function setActive(el){
+  el.addClass('active').siblings().removeClass('active')
+}
